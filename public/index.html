@@ -1,0 +1,54 @@
+
+<!-- HOW TO RUN
+    1.Open terminal 1 - Run the scripts.js - "node server.js"
+    2.Open terminal 2 - Run - "http-server --cors"
+    3.Open the address from the terminal 2
+    4.If you made changes to see the change must clear cash in browser - settings->privacy&security->delete
+    5.Dependences npm install express openai dotenv cors
+    6.also npm install --global http-server
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>Ai Quiz Generator</title>
+</head>
+<body>
+    
+    <div id="wrap">
+        <div class="title">
+            <h1>Ai Quiz Generator</h1>
+            <p>Enter a topic and the AI will generate you questions!</p>
+        </div>
+
+        <div class="topic">
+            <p>Enter a topic for the AI: </p>
+            <input id="topicInput" type="text" name="topic" placeholder="Countries in South America">
+            <button id="generateButton">Generate</button>
+        </div>
+
+    <div id="quizQuestions">
+        <div id="question">
+            <h1 id="question-element"></h1>
+        </div>
+        <div id="answer1">
+            <button id="answer1-btn"></button>
+        </div>
+        <div id="answer2">
+            <button id="answer2-btn"></button>
+        </div>
+        <div id="answer3">
+            <button id="answer3-btn"></button>
+        </div>
+        <div id="answer4">
+            <button id="answer4-btn"></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway";
+}
+/* #F3F7EC */
+body{
+    background-color: #F3F7EC;
+    color: #005C78;
+}
+
+#wrap{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title{
+    margin:4vw auto 0;
+    text-align: center;
+}
+
+.title h1{
+    font-weight: normal;
+    font-size: 6vw;
+}
+
+.topic{
+    font-size: 2vw;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 6vw;
+}
+
+.topic input{
+    font-size: 2vw;
+    width: 55%;
+    height: 4vw;
+}
+
+#generateButton{
+    text-align: center;
+    font-size: 2vw;
+    display: block;
+    margin: 1vw auto;
+    width: 20%;
+    height: 4vw;
+}
+
+#quizQuestions{
+    width: 75%;
+    padding: 5px;
+    margin: 0 auto 20vw;
+    box-shadow: 10px 15px  #014053;
+    background-color: #005C78;
+    border: 2px solid #014053;
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: "question"
+                         "answer1"
+                         "answer2"
+                         "answer3"
+                         "answer4";
+}
+
+#question {
+    grid-area: question;
+}
+
+#question h1{
+    color: #F3F7EC;
+    font-size: 4vw;
+    font-weight: normal;
+}
+
+
+button{
+    color: #005C78;
+    border: 0px;
+    border-radius: 4px;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    font-size: 4vw;
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+
+button:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+button:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+button:active{
+    transform: scale(1.5);
+}
+  
+
+#answer1{
+    grid-area: answer1;
+}
+#answer1 button{
+    width: 100%;
+}
+#answer2{
+    grid-area: answer2;
+}
+#answer2 button{
+    width: 100%;
+}
+#answer3{
+    grid-area: answer3;
+}
+#answer3 button{
+    width: 100%;
+}
+#answer4{
+    grid-area: answer4;
+}
+#answer4 button{
+    width: 100%;
+}
+@media screen and (min-width: 1050px){
+    #wrap{
+        width: 60%;
+    }
+}
